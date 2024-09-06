@@ -1,30 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MEME PAS MAL</title>
+    <title>Harry Potter Meme Magic</title>
     <link rel='stylesheet' href='/stylesheets/home.css' />
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lilita+One&display=swap" rel="stylesheet">
+    <style>
+      /* Add some basic styling to fit the Harry Potter theme */
+      body {
+        font-family: 'Arimo', sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #ffcc00;
+        font-family: 'Lilita One', cursive;
+      }
+
+      .pdpSection {
+        margin: 20px 0;
+      }
+
+      .pdpImg {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #333;
+      }
+
+      .nextPdp {
+        font-size: 24px;
+        color: #ffcc00;
+        text-decoration: none;
+        margin: 10px;
+      }
+
+      .username, .party {
+        margin: 20px 0;
+      }
+
+      .userInput, .partyInput {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #333;
+        width: 80%;
+      }
+
+      #newRoom, #joinRoom {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #333;
+        border-radius: 5px;
+        margin: 10px;
+      }
+
+      #newRoom:hover, #joinRoom:hover {
+        background-color: #555;
+      }
+    </style>
   </head>
   <body>
-    <h1>MEME PAS MAL</h1>
-    <p>Le jeu où vous pourrez ridiculiser vos amis !</p>
+    <h1>Harry Potter Meme Magic</h1>
+    <p>Join the magical game where you can create and share memes with your friends!</p>
     <script src="/javascripts/home.js" type="module"></script>
     <section class="pdpSection">
-      <img id="profilePicture" class="pdpImg" src="">
+      <img id="profilePicture" class="pdpImg" src="" alt="Profile Picture">
     </section>
     <a id="nextPP" class="nextPdp">></a>
-    <h3>Choisissez un surnom :</h3>
+    <h3>Choose Your Wizard Name:</h3>
     <form name="username" class="username" method="get">
       <input id="usernameInput" name="username" class="userInput" required maxlength="15"/>
     </form>
     <section class="party">
-      <h3>Créer une partie :</h3>
-      <a id="newRoom">Créer une partie !</a>
-      <h3>Rejoindre une partie :</h3>
+      <h3>Create a Magical Game:</h3>
+      <a id="newRoom">Create a New Game!</a>
+      <h3>Join a Magical Game:</h3>
       <form name="roomID">
-        <input name="roomID" class="partyInput" type="number" placeholder="Votre code de 8 caractères" required minlength="8" maxlength="8">
+        <input name="roomID" class="partyInput" type="number" placeholder="Your 8-digit Code" required minlength="8" maxlength="8">
       </form>
-      <a id="joinRoom" type="submit" onclick="">Rejoindre !</a>
+      <a id="joinRoom" type="submit" onclick="">Join the Game!</a>
     </section>
   </body>
 </html>
